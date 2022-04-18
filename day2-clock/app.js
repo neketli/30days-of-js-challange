@@ -6,7 +6,7 @@ const setDate = () => {
 	const now = new Date();
 	const s = (now.getSeconds() / 60) * 360 + 90;
 	const m = (now.getMinutes() / 60) * 360 + 90;
-	const h = (now.getHours() / 60) * 360 + 90;
+	const h = (now.getMinutes() / 12) * 360 + 90;
 	
 	secondsArrow.style.transform = `rotate(${s}deg)`;
 	minutesArrow.style.transform = `rotate(${m}deg)`;
